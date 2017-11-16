@@ -2,5 +2,6 @@
 {{homeTitle}}
 </p>
 <!-- property bindig -->
-<input [value]="myString"/>
-<input required="myBoolean"/>
+<input value={{myString}}/>
+<input [required]="myBoolean"/>
+<button (click) ="alertMe('i like beef')" >click me </button>
