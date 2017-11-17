@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -9,19 +9,13 @@ export class HomeComponent implements OnInit {
   homeTitle = "welcome to the home page";
   myString = "i love chicken";
 
-
-
-
-  ninja = {
-    name: " manuel ",
-    age: 27
-  };
+  @Input() ninja;
 
 alertMe (val){
   alert(val)
 };
   constructor() { }
-
+  
   ngOnInit() {
   }
 
