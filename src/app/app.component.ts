@@ -12,4 +12,7 @@ export class AppComponent {
     name: " manuel ",
     age: 27
   };
+   yell(e){
+     alert("i am yelling")
+   }
 }
